@@ -1,4 +1,3 @@
-
 a{ 
     text-decoration: none;
     color: white;
@@ -12,6 +11,7 @@ ul{
 body{
     margin: 0;
 }
+/* 最初のページ */
 #first_page_wrapper{
     position: fixed;
     top: 0;
@@ -21,7 +21,6 @@ body{
     z-index: 100;/*一番手前に表示したい */
 
 }
-
 #first_page{
     width:100%;
     height: 100vh;
@@ -35,9 +34,10 @@ body{
     padding-top: 40vh;
 }
 
+/* ヘッダー */
 #header{
     width: 100%;
-    height: 10vh;
+    height: 50px;
     background-color:#333333;
     color: white;
     text-align: center;
@@ -53,12 +53,11 @@ body{
 }
 
 #logo{
-    width: 10%;
-    height: 50px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin:15px;
+    display: flex;
+    align-items: center;
+    width: 20%;
+    margin-left: 20px;
+    font-size: 20px;
 }
 #nav{
     margin-right: 20px;
@@ -76,6 +75,40 @@ body{
     background-position: bottom;
     height: 500px;
 }
+#LV{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    background-color: #555555;
+}
+
+.menu_wrapper{
+    /* position: absolute; */
+    top: 50px;
+    right: 0;
+    background-color: #333333;
+    color: white;
+    width: 200px;
+    /* display: none; Initially hidden */
+    z-index: 1;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+
+    background-color: red;
+}
+.menu{
+
+    background-color: red;
+    height: 10px;
+}
+
+
+
+
+
+/* メイン画面イメージ部分 */
 #sihan_img{
     width: 150px;
     padding-top: 200px;
@@ -118,13 +151,9 @@ main{
     text-align: center;
     padding-bottom:30px ;
 }
-#LV{
-    padding:16px;
-    background-color: #555555;
-
-}
 
 
+/* テーマボックス */
 .Theme_Box{
     width:500px;
     margin:30px auto;
@@ -146,12 +175,30 @@ main{
     font-size: 20px;
     padding: 10px;
 }
+.Theme_textarea{
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.Theme_input{
+    display: none;
+}
+.open{
+    display: block;
+}
 
+
+
+/* フッター */
 footer{
     width: 100%;
     height: 70px;
     background-color:#333333;
     color: white;
     text-align: center;
-
 }
